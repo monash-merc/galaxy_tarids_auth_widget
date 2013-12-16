@@ -202,6 +202,7 @@ This file needs to be kept secret (it is equilivent to your MyTardis password)""
             p=genericForm()
             p.feed(r.text)
             # not sure if its necessary to post both data and files, but since galaxy doesn't allow the API key to be reset, and Tardis doesn't allow generating a new key, its kind of difficult to test
+            del p.inputs['new_mytardis_api_key_file']
             r=s.post(url,data=p.inputs,files={'new_mytardis_api_key_file':("chrishines.key",apiFile)})
             wx.EndBusyCursor()
             return True
