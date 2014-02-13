@@ -1,6 +1,6 @@
 #!/usr/bin/python
-myTardisServer="https://testmytardis.ammrf.org.au/"
-galaxyServer="https://testgalaxy.ammrf.org.au/"
+myTardisServer="https://mytardis.ammrf.org.au/"
+galaxyServer="https://galaxy.ammrf.org.au/"
 import json
 import requests
 import base64
